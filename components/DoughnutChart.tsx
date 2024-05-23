@@ -18,7 +18,7 @@ const DoughnutChart = (accounts: DoughnutChartProps) => {
 		],
     labels:['Bank 1' , 'Bank 2 ' , 'Bank 3']
 	};
-	return <Doughnut data={data} options={{
+	return <Doughnut className="sm:h-16 bg-black-2 rounded-full"  data={data} options={{
   cutout:'60%',
   plugins:{
     legend:{

@@ -45,8 +45,8 @@ export const signUp = async (userData : SignUpParams) =>{
 export async function getLoggedInUser() {
   try {
     const { account } = await createSessionClient();
-    const result = await account.get();
-    return parseStringify(result);
+    const user = await account.get();
+    return parseStringify(user);
   } catch (error) {
     console.log(error)
     return null;
@@ -63,7 +63,6 @@ export const logoutAccount = async () => {
 
     await account.deleteSession('current')
   } catch (error) {
-    console.log(error)
     return (null)
   }
 }

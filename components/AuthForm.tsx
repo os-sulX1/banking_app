@@ -201,7 +201,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
 							className="form-link"
 							href={type === "sign-in" ? "/sign-up" : "/sign-in"}
 						>
-							{type === "sign-in" ? "Sign in" : "Sign up"}
+							{type === "sign-in" ? "Sign Up" : "Sign In"}
 						</Link>
 					</footer>
 				</>
